@@ -22,7 +22,7 @@ set INSTALL_DIR=C:/dk
 
 set DOWNLOAD_DIR=C:/d/
 
-set VCPKG_COMMON_OPTIONS="--disable-metrics --triplet x64-windows --x-buildtrees-root=%BUILD_DIR% --x-install-root=%INSTALL_DIR% --downloads-root=%DOWNLOAD_DIR% --vcpkg-root=%VCPKG_DIR%"
+set VCPKG_COMMON_OPTIONS=--disable-metrics --triplet x64-windows --x-buildtrees-root=%BUILD_DIR% --x-install-root=%INSTALL_DIR% --downloads-root=%DOWNLOAD_DIR% --vcpkg-root=%VCPKG_DIR%
 
 REM Windows minimum target version to use for backward compatibility.
 REM Possible values:
