@@ -17,7 +17,7 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
     + Desktop development with C++
         + C++ core desktop features
         + MSVC v142 - VS2019 C++ x64/x86
-        + Windows 10 SDK 10.0.19041.0
+        + Windows 11 SDK 10.0.22000
         + Just in time debugger
         + C++ profiling tools
         + C++ Cmake tools for windows
