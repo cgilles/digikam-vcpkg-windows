@@ -12,7 +12,7 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
     + CPU    : 10
 
 - Windows 10 22H2 or later                          https://www.microsoft.com/en-us/software-download/windows10
-- git 2.42 or later                                 https://git-scm.com/download/win
+- Git 2.42 or later                                 https://git-scm.com/download/win
 - Visual Studio 2019                                https://learn.microsoft.com/en-us/visualstudio/releases/2019/history
     + Desktop development with C++
         + C++ core desktop features
@@ -24,6 +24,8 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
         + C++ ATL for latest v142 build tools
         + C++ AdressSanitizer
         + C++/CLI support for v142
+
+- NSIS 3.x                                          https://nsis-dev.github.io/
 
 * Build:
 --------
