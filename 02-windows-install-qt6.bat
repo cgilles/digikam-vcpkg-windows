@@ -17,15 +17,15 @@ call config.cmd
 REM For elapsed time mesurement
 call %ORIG_WD%/common.cmd :StartScript
 
-%VCPKG_DIR%/vcpkg --disable-metrics --x-buildtrees-root=%INSTALL_DIR% install qtbase
-%VCPKG_DIR%/vcpkg --disable-metrics --x-buildtrees-root=%INSTALL_DIR% install qtimageformats
-%VCPKG_DIR%/vcpkg --disable-metrics --x-buildtrees-root=%INSTALL_DIR% install qtmultimedia
-%VCPKG_DIR%/vcpkg --disable-metrics --x-buildtrees-root=%INSTALL_DIR% install qtnetworkauth
-%VCPKG_DIR%/vcpkg --disable-metrics --x-buildtrees-root=%INSTALL_DIR% install qtscxml
-%VCPKG_DIR%/vcpkg --disable-metrics --x-buildtrees-root=%INSTALL_DIR% install qtsvg
-%VCPKG_DIR%/vcpkg --disable-metrics --x-buildtrees-root=%INSTALL_DIR% install qttranslations
-%VCPKG_DIR%/vcpkg --disable-metrics --x-buildtrees-root=%INSTALL_DIR% install qttools
-%VCPKG_DIR%/vcpkg --disable-metrics --x-buildtrees-root=%INSTALL_DIR% install qtwebengine
+%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtbase
+%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtimageformats
+%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtmultimedia
+%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtnetworkauth
+%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtscxml
+%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtsvg
+%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qttranslations
+%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qttools
+%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtwebengine
 
 REM For elapsed time mesurement
 
