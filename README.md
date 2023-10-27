@@ -32,7 +32,7 @@ To start Qt compilation use these scripts:
 
     1) ./01-windows-install-vcpkg.bat
 
-    NOTE: due to long paths problem while compiling under Windows and MSVC, VCPKG must be installed in a shortest dir as C:/vcpkg
+    NOTE: due to long paths problem while compiling under Windows and MSVC, VCPKG must be installed in a shortest dir as C:/vcpkg and installed target in C:/dk.
 
     2) ./02-windows-install-qt6.bat
 

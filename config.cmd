@@ -15,6 +15,7 @@ set ORIG_WD=%CD%
 
 set VCPKG_DIR=C:/vcpkg/
 
+REM See https://github.com/microsoft/vcpkg/issues/24751
 set INSTALL_DIR=C:/dk/
 
 REM Windows minimum target version to use for backward compatibility.
