@@ -15,6 +15,8 @@ set ORIG_WD=%CD%
 
 set VCPKG_DIR=C:/vcpkg/
 
+set INSTALL_DIR=C:/dk/
+
 REM Windows minimum target version to use for backward compatibility.
 REM Possible values:
 REM    10  => Windows 10
