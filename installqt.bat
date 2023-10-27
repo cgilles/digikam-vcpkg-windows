@@ -18,6 +18,14 @@ REM For elapsed time mesurement
 call %ORIG_WD%/common.cmd :StartScript
 
 %VCPKG_DIR%/vcpkg --disable-metrics install qtbase
+%VCPKG_DIR%/vcpkg --disable-metrics install qtimageformats
+%VCPKG_DIR%/vcpkg --disable-metrics install qtmultimedia
+%VCPKG_DIR%/vcpkg --disable-metrics install qtnetworkauth
+%VCPKG_DIR%/vcpkg --disable-metrics install qtscxml
+%VCPKG_DIR%/vcpkg --disable-metrics install qtsvg
+%VCPKG_DIR%/vcpkg --disable-metrics install qttranslations
+%VCPKG_DIR%/vcpkg --disable-metrics install qttools
+%VCPKG_DIR%/vcpkg --disable-metrics install qtwebengine
 
 REM For elapsed time mesurement
 
