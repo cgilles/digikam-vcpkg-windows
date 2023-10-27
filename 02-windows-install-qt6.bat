@@ -17,15 +17,17 @@ call config.cmd
 REM For elapsed time mesurement
 call %ORIG_WD%/common.cmd :StartScript
 
-%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtbase
-%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtimageformats
-%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtmultimedia
-%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtnetworkauth
-%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtscxml
-%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtsvg
-%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qttranslations
-%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qttools
-%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtwebengine
+%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qt
+
+REM %VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtbase
+REM %VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtimageformats
+REM %VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtmultimedia
+REM %VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtnetworkauth
+REM #%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtscxml
+REM #%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtsvg
+REM %VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qttranslations
+REM %VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qttools
+REM #%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qtwebengine
 
 REM For elapsed time mesurement
 
