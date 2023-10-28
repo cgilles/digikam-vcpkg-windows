@@ -1,5 +1,5 @@
-Scripts to install compiled Qt Framework with MSVC under Windows
-================================================================
+Scripts to install compiled digiKam dependencies with MSVC under Windows
+========================================================================
 
 Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
 
@@ -18,11 +18,11 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
         + C++ core desktop features
         + MSVC v142 - VS2019 C++ x64/x86
         + Windows 11 SDK 10.0.22000
-        + Just in time debugger
-        + C++ profiling tools
+        + Just in time debugger                     (optional)
+        + C++ profiling tools                       (optional)
         + C++ Cmake tools for windows
         + C++ ATL for latest v142 build tools
-        + C++ AdressSanitizer
+        + C++ AdressSanitizer                       (optional)
         + C++/CLI support for v142
 
 - NSIS 3.x                                          https://nsis-dev.github.io/
@@ -30,7 +30,7 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
 * Build:
 --------
 
-To start Qt compilation use these scripts:
+To start Qt compilation use these scripts in a git-bash console:
 
     1) ./01-windows-install-vcpkg.bat
 
@@ -40,7 +40,7 @@ To start Qt compilation use these scripts:
         DOWNLOAD_DIR=C:/d/
         BUILD_DIR=C:/b/
 
-        See the config.cmd for details.
+        See the config.cmd for details. dDirectories will be created automatically.
 
     2) ./02-windows-install-qt6.bat
 
