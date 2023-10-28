@@ -21,7 +21,7 @@ call %ORIG_WD%/common.cmd :StartScript
 %VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install qt
 
 %VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install libheif
-%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install libexiv2
+%VCPKG_DIR%/vcpkg %VCPKG_COMMON_OPTIONS% install exiv2
 
 REM For elapsed time mesurement
 
