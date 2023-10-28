@@ -16,11 +16,11 @@ set ORIG_WD=%CD%
 set VCPKG_DIR=C:/vcpkg/
 
 REM See https://github.com/microsoft/vcpkg/issues/24751
-set BUILD_DIR=C:/b/
+set BUILD_DIR=E:/b/
 
-set INSTALL_DIR=C:/dk
+set INSTALL_DIR=E:/dk
 
-set DOWNLOAD_DIR=C:/d/
+set DOWNLOAD_DIR=E:/d/
 
 set VCPKG_COMMON_OPTIONS=--disable-metrics --triplet x64-windows --x-buildtrees-root=%BUILD_DIR% --x-install-root=%INSTALL_DIR% --downloads-root=%DOWNLOAD_DIR% --vcpkg-root=%VCPKG_DIR%
 

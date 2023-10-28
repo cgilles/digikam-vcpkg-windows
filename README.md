@@ -10,6 +10,8 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
         + Storage: VDI static size of 150 Gb
         + Memory : 12 Gb
         + CPU    : 10
+        + Disk0  : NTFS 150 Gb                          C: system
+        + Disk1  : NTFS 150 Gb                          E: data
 
     - Windows 10 22H2 or later                          https://www.microsoft.com/en-us/software-download/windows10
     - Git 2.42 or later                                 https://git-scm.com/download/win
