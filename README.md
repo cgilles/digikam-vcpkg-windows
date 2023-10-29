@@ -7,15 +7,16 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
 ---------------
 
     - VirtualBox 7.x + guest extension pack             https://www.virtualbox.org/wiki/Downloads
-        + Storage: VDI static size of 150 Gb
-        + Memory : 12 Gb
-        + CPU    : 10
-        + Disk0  : NTFS 150 Gb                          C:/ system
-        + Disk1  : NTFS 250 Gb                          E:/ data
+        + Memory : 24 Gb                                Note: QtWebEngine requires a lots of memory with parallelized build
+        + CPU    : 8
+        + Disk0  : VDI static NTFS 150 Gb               C:/ SYSTEM
+        + Disk1  : VDI static NTFS 250 Gb               E:/ DATA
 
     - Windows 10 22H2 or later                          https://www.microsoft.com/en-us/software-download/windows10
+
     - Git 2.42 or later                                 https://git-scm.com/download/win
         + Git-bash console
+
     - Visual Studio 2022                                https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022
         + Desktop development with C++
             + C++ core desktop features
