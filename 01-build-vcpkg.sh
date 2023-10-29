@@ -83,6 +83,7 @@ fi
 cd $VCPKG_DIR
 
 git pull
+$VCPKG_DIR/vcpkg update
 
 #################################################################################################
 # Dependencies build and installation
