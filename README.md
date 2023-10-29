@@ -49,7 +49,5 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
 
         See the config.sh for details. Directories will be created automatically.
 
-    2) ./02-windows-install-qt6.bat
-
-    3) ./03-windows-installkf6.bat
+    2) ./02-build-extralibs.sh
 

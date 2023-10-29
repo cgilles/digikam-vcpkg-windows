@@ -146,12 +146,12 @@ fi
 cd $BUILDING_DIR
 rm -rf $BUILDING_DIR/* || true
 
-cmake -B [build directory] -S . -DCMAKE_TOOLCHAIN_FILE=[path to vcpkg]/scripts/buildsystems/vcpkg.cmake
 cmake $ORIG_WD/../3rdparty \
-                           -DCMAKE_TOOLCHAIN_FILE=${VCKPG_DIR}/scripts/buildsystems/vcpkg.cmake
+                           -DCMAKE_TOOLCHAIN_FILE=${VCKPG_DIR}/scripts/buildsystems/vcpkg.cmake \
                            -DCMAKE_BUILD_TYPE=RelWithDebInfo \
                            -DCMAKE_COLOR_MAKEFILE=ON \
                            -DCMAKE_INSTALL_PREFIX=${INSTALL_DIR} \
+                           -DINSTALL_ROOT=${INSTALL_DIR} \
                            -DCMAKE_BUILD_WITH_INSTALL_RPATH=ON \
                            -DEXTERNALS_DOWNLOAD_DIR=$DOWNLOAD_DIR \
                            -DKA_VERSION=$DK_KA_VERSION \
@@ -166,7 +166,7 @@ cmake $ORIG_WD/../3rdparty \
 # Low level libraries
 # NOTE: The order to compile each component here is very important.
 
-cmake --build . --config RelWithDebInfo --target ext_imagemagick -- -j$CPU_CORES
+cmake --build . --parallel --config RelWithDebInfo --target ext_imagemagick
 
 #################################################################################################
 fi
