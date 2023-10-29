@@ -87,26 +87,26 @@ git pull
 #################################################################################################
 # Dependencies build and installation
 
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install openssl
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install pthreads
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install gettext
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install icu
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install libpng
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install tiff
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install libmysql
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install libjpeg-turbo
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install jasper
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install libde265
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install libjxl
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install aom
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install libavif
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install libheif
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install freeglut
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install brotli
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install zlib
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install bzip2
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install ffmpeg
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install qt
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install openssl
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install pthreads
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install gettext
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install icu
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install libpng
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install tiff
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install libmysql
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install libjpeg-turbo
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install jasper
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install libde265
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install libjxl
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install aom
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install libavif
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install libheif
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install freeglut
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install brotli
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install zlib
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install bzip2
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install ffmpeg
+$VCPKG_DIR/vcpkg --disable-metrics --triplet x64-windows --x-buildtrees-root=${BUILD_DIR} --x-install-root=${INSTALL_DIR} --downloads-root=${DOWNLOAD_DIR} --vcpkg-root=${VCPKG_DIR} install qt
 
 $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install opencv
 $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS} install boost
