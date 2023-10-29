@@ -73,7 +73,7 @@ if [[ $CONTINUE_INSTALL == 0 ]]; then
 
     git clone https://github.com/Microsoft/vcpkg.git $VCPKG_DIR
 
-    $VCPKG_DIR\bootstrap-vcpkg.bat
+    $VCPKG_DIR/bootstrap-vcpkg.bat
 
 fi
 
