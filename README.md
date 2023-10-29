@@ -16,6 +16,10 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
 
     - Git 2.42 or later                                 https://git-scm.com/download/win
         + Git-bash console
+        + Bundled OpenSSH
+        + OpenSSH library
+        + Checkout/Commit Unix EOL
+        + MinTTY Terminal
 
     - Visual Studio 2022                                https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022
         + Desktop development with C++
