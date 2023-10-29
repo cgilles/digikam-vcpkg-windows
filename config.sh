@@ -7,8 +7,12 @@
 
 ########################################################################
 
+# About short pathes to use with VCPKG, see https://github.com/microsoft/vcpkg/issues/24751
+
+# Absolute path where are installed VCPKG scripts, portfiles, and configurations.
 VCPKG_DIR="C:/vcpkg"
 
+# Absolute path where are installed all compiled targets.
 INSTALL_DIR="E:/dk"
 
 # Absolute path where are downloaded all tarballs to compile.

@@ -39,7 +39,7 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
 
     To start Qt compilation use these scripts in a git-bash console:
 
-    1) ./01-windows-install-vcpkg.bat
+    1) ./01-build-vcpkg.sh
 
     NOTE: due to long path problems while compiling under Windows and MSVC, VCPKG working directories must adjusted as shortest as possible:
         VCPKG_DIR=C:/vcpkg/
@@ -47,7 +47,7 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
         DOWNLOAD_DIR=E:/d/
         BUILD_DIR=E:/b/
 
-        See the config.cmd for details. dDirectories will be created automatically.
+        See the config.sh for details. Directories will be created automatically.
 
     2) ./02-windows-install-qt6.bat
 
