@@ -17,6 +17,15 @@ DOWNLOAD_DIR="E:/d"
 # Absolute path where are compiled all tarballs
 BUILDING_DIR="E:/b"
 
+VCPKG_COMMON_OPTIONS=(
+"--disable-metrics"
+"--triplet x64-windows"
+"--x-buildtrees-root=${BUILDING_DIR}"
+"--x-install-root=${INSTALL_DIR}"
+"--downloads-root=${DOWNLOAD_DIR}"
+"--vcpkg-root=${VCPKG_DIR}"
+)
+
 #-------------------------------------------------------------------------------------------
 
 # URL to git repository to checkout digiKam source code
