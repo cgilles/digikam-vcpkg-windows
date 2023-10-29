@@ -15,11 +15,12 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
 
     - Windows 10 22H2 or later                          https://www.microsoft.com/en-us/software-download/windows10
     - Git 2.42 or later                                 https://git-scm.com/download/win
-    - Visual Studio 2022                                https://learn.microsoft.com/en-us/visualstudio/releases/2019/history
+        + Git-bash console
+    - Visual Studio 2022                                https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022
         + Desktop development with C++
             + C++ core desktop features
             + MSVC v142 - VS2019 C++ x64/x86
-              Windows 11 SDK >= 10.0.22621.0
+            + Windows 11 SDK >= 10.0.22621.0
             + Just in time debugger                     (optional)
             + C++ Cmake tools for windows
             + C++ ATL for latest v142 build tools
@@ -36,9 +37,9 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
 
     NOTE: due to long path problems while compiling under Windows and MSVC, VCPKG working directories must adjusted as shortest as possible:
         VCPKG_DIR=C:/vcpkg/
-        INSTALL_DIR=C:/dk/
-        DOWNLOAD_DIR=C:/d/
-        BUILD_DIR=C:/b/
+        INSTALL_DIR=E:/dk/
+        DOWNLOAD_DIR=E:/d/
+        BUILD_DIR=E:/b/
 
         See the config.cmd for details. dDirectories will be created automatically.
 
