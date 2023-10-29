@@ -9,8 +9,8 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
     - VirtualBox 7.x + guest extension pack             https://www.virtualbox.org/wiki/Downloads
         + Memory : 24 Gb                                Note: QtWebEngine requires a lots of memory with parallelized build
         + CPU    : 8
-        + Disk0  : VDI static NTFS 150 Gb               C:/ SYSTEM
-        + Disk1  : VDI static NTFS 250 Gb               E:/ DATA
+        + Disk0  : VDI static NTFS 150 Gb               C:/ SYSTEM VCPKG cache build target on $HOME/AppData/Local/vcpkg/archives
+        + Disk1  : VDI static NTFS 250 Gb               E:/ DATA   for the build, download, install storage
 
     - Windows 10 22H2 or later                          https://www.microsoft.com/en-us/software-download/windows10
 
