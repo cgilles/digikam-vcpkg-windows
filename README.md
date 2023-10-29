@@ -10,8 +10,8 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
         + Storage: VDI static size of 150 Gb
         + Memory : 12 Gb
         + CPU    : 10
-        + Disk0  : NTFS 150 Gb                          C: system
-        + Disk1  : NTFS 250 Gb                          E: data
+        + Disk0  : NTFS 150 Gb                          C:/ system
+        + Disk1  : NTFS 250 Gb                          E:/ data
 
     - Windows 10 22H2 or later                          https://www.microsoft.com/en-us/software-download/windows10
     - Git 2.42 or later                                 https://git-scm.com/download/win
@@ -19,12 +19,13 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
     - Visual Studio 2022                                https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022
         + Desktop development with C++
             + C++ core desktop features
-            + MSVC v142 - VS2019 C++ x64/x86
+            + MSVC v143 - VS2022 C++ x64/x86
             + Windows 11 SDK >= 10.0.22621.0
             + Just in time debugger                     (optional)
             + C++ Cmake tools for windows
-            + C++ ATL for latest v142 build tools
-            + C++/CLI support for v142
+            + C++ ATL for latest v143 build tools
+            + C++/CLI support for v143
+            + C++ Clang tools for Windows (16.0.5)
 
     - NSIS 3.x                                          https://nsis-dev.github.io/
 
