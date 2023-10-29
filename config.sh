@@ -1,57 +1,23 @@
 #!/bin/bash
 
-# SPDX-FileCopyrightText: 2013-2022 by Gilles Caulier  <caulier dot gilles at gmail dot com>
+# SPDX-FileCopyrightText: 2013-2023 by Gilles Caulier  <caulier dot gilles at gmail dot com>
 #
 # SPDX-License-Identifier: BSD-3-Clause
 #
 
 ########################################################################
 
-MXE_ROOT_DIR=/mnt/data
+VCPKG_DIR="C:/vcpkg"
+
+INSTALL_DIR="E:/dk"
 
 # Absolute path where are downloaded all tarballs to compile.
-DOWNLOAD_DIR="$MXE_ROOT_DIR/temp.dwnld"
+DOWNLOAD_DIR="E:/d"
 
 # Absolute path where are compiled all tarballs
-BUILDING_DIR="$MXE_ROOT_DIR/temp.build"
+BUILDING_DIR="E:/b"
 
-#-------------------------------------------------------------------------------------------
-
-# MXE configuration
-
-#------------
-# IMPORTANT: Target Windows architecture to build installer. Possible values: 32 or 64 bits.
-#            We do not support 32 bits anymore due to lack of memory allocation on this kind
-#            of architecture.
-MXE_ARCHBITS=64
-#------------
-
-if [[ $MXE_ARCHBITS == 32 ]]; then
-    # Windows 32 bits shared
-    MXE_BUILD_TARGETS="i686-w64-mingw32.shared"
-    MXE_BUILDROOT="$MXE_ROOT_DIR/build.win32"
-elif [[ $MXE_ARCHBITS == 64 ]]; then
-    # Windows 64 bits shared
-    MXE_BUILD_TARGETS="x86_64-w64-mingw32.shared"
-    MXE_BUILDROOT="$MXE_ROOT_DIR/build.win64"
-else
-    echo "Unsupported or wrong target Windows architecture: $MXE_ARCHBITS bits."
-    exit -1
-fi
-
-echo "Target Windows architecture: $MXE_ARCHBITS bits."
-
-MXE_GIT_URL="https://github.com/mxe/mxe.git"
-
-#MXE_GIT_REVISION=f08ef6811411c59b19316337e4a9dfd462be7c82
-MXE_GIT_REVISION=master
-
-MXE_INSTALL_PREFIX=${MXE_BUILDROOT}/usr/${MXE_BUILD_TARGETS}/
-
-MXE_TOOLCHAIN=${MXE_INSTALL_PREFIX}/share/cmake/mxe-conf.cmake
-
-MXE_GCC_VERSION=default
-#MXE_GCC_VERSION=9
+VCPKG_COMMON_OPTIONS=--disable-metrics --triplet x64-windows --x-buildtrees-root=$BUILD_DIR --x-install-root=$INSTALL_DIR --downloads-root=$DOWNLOAD_DIR --vcpkg-root=$VCPKG_DIR
 
 #-------------------------------------------------------------------------------------------
 
@@ -65,7 +31,7 @@ DK_GITURL="git@invent.kde.org:graphics/digikam.git"
 DK_URL="http://download.kde.org/stable/digikam"
 
 # Location to build source code.
-DK_BUILDTEMP=$MXE_ROOT_DIR/dktemp
+DK_BUILDTEMP=$BUILDING_DIR/dktemp
 
 # KDE Plasma version.
 # See official release here: https://download.kde.org/stable/plasma/
