@@ -28,7 +28,6 @@ echo "----------------------------------------------"
 
 . ./common.sh
 . ./config.sh
-ChecksRunAsRoot
 StartScript
 ChecksCPUCores
 HostAdjustments
