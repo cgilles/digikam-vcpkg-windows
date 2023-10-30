@@ -41,7 +41,7 @@ cd $BUILDING_DIR/dk_cmake
 rm -rf $BUILDING_DIR/dk_cmake/* || true
 
 cmake $ORIG_WD/3rdparty \
-                           -DCMAKE_TOOLCHAIN_FILE=$VCKPG_DIR/scripts/buildsystems/vcpkg.cmake \
+                           -DCMAKE_TOOLCHAIN_FILE=$VCPKG_DIR/scripts/buildsystems/vcpkg.cmake \
                            -DCMAKE_BUILD_TYPE=RelWithDebInfo \
                            -DCMAKE_COLOR_MAKEFILE=ON \
                            -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR \
