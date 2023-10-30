@@ -30,7 +30,6 @@ echo "----------------------------------------------"
 . ./config.sh
 StartScript
 ChecksCPUCores
-HostAdjustments
 RegisterRemoteServers
 
 ORIG_WD="`pwd`"
