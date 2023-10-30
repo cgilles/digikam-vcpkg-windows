@@ -36,9 +36,9 @@ ORIG_WD="`pwd`"
 
 #################################################################################################
 
-cd $BUILDING_DIR
+cd $BUILDING_DIR/dk_cmake
 
-rm -rf $BUILDING_DIR/* || true
+rm -rf $BUILDING_DIR/dk_cmake/* || true
 
 cmake $ORIG_WD/3rdparty \
                            -DCMAKE_TOOLCHAIN_FILE=$VCKPG_DIR/scripts/buildsystems/vcpkg.cmake \
@@ -141,7 +141,7 @@ if [[ $DK_QTVERSION == 6 ]] ; then
 
     for COMPONENT in $FRAMEWORK_COMPONENTS ; do
 
-        SUBDIR=$BUILDING_DIR/ext_kf6/$COMPONENT-prefix/src/$COMPONENT
+        SUBDIR=$BUILDING_DIR/dk_cmake/ext_kf6/$COMPONENT-prefix/src/$COMPONENT
         cd $SUBDIR
         echo "$(basename "$SUBDIR"):$(git rev-parse HEAD)" >> $KF6_GITREV_LST
         cd $ORIG_WD
