@@ -14,6 +14,8 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
 
     - Windows 10 22H2 or later                          https://www.microsoft.com/en-us/software-download/windows10
 
+    - CMake 3.27 or later                               https://cmake.org/download/
+
     - Git 2.42 or later                                 https://git-scm.com/download/win
         + Git-bash console
         + Bundled OpenSSH
