@@ -34,6 +34,8 @@ RegisterRemoteServers
 
 ORIG_WD="`pwd`"
 
+export PATH=$PATH:/c/bison
+
 #################################################################################################
 
 cd $BUILDING_DIR/dk_cmake

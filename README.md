@@ -37,6 +37,9 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
 
     - NSIS 3.x                                          https://nsis-dev.github.io/
 
+    - WinFlexBison 2.5 or later                         https://github.com/lexxmark/winflexbison/releases
+        + Uncompress the binary archive to C:/bison
+
 * Build:
 --------
 
