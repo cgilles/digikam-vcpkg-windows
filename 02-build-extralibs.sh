@@ -34,7 +34,8 @@ RegisterRemoteServers
 
 ORIG_WD="`pwd`"
 
-export PATH=$PATH:/c/bison
+export PATH=$PATH:/c/bison:$INSTALL_DIR/$VCPKG_TRIPLET/tools/gperf
+echo "PATH=$PATH"
 
 #################################################################################################
 
