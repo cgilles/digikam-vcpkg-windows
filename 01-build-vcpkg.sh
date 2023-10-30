@@ -120,6 +120,7 @@ $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install exiv2
 $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install libical
 $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install fftw3
 $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install openexr
+$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install gperf
 
 echo -e "\n"
 
