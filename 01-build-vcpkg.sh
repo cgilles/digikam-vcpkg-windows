@@ -121,6 +121,7 @@ $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install libical
 $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install fftw3
 $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install openexr
 $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install gperf
+$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install libsnoretoast
 
 echo -e "\n"
 
