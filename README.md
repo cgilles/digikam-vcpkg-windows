@@ -40,6 +40,9 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
     - WinFlexBison 2.5 or later                         https://github.com/lexxmark/winflexbison/releases
         + Uncompress the binary archive to C:/bison
 
+    - Python 3.10 or later                              https://www.python.org/downloads/
+        + Add python path to current user
+
 * Build:
 --------
 
