@@ -152,8 +152,8 @@ cmake $ORIG_WD/3rdparty \
                            -DVCPKG_TARGET_TRIPLET=$VCPKG_TRIPLET \
                            -DCMAKE_BUILD_TYPE=RelWithDebInfo \
                            -DCMAKE_COLOR_MAKEFILE=ON \
-                           -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR \
-                           -DINSTALL_ROOT=$INSTALL_DIR \
+                           -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR/$VCPKG_TRIPLET \
+                           -DINSTALL_ROOT=$INSTALL_DIR/$VCPKG_TRIPLET \
                            -DCMAKE_BUILD_WITH_INSTALL_RPATH=ON \
                            -DEXTERNALS_DOWNLOAD_DIR=$DOWNLOAD_DIR \
                            -DKA_VERSION=$DK_KA_VERSION \
