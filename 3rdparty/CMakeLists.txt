@@ -52,5 +52,4 @@ set(PATCH_COMMAND patch)
 
 add_subdirectory(ext_lensfun)
 add_subdirectory(ext_imagemagick)
-
-add_subdirectory(ext_kf${ENABLE_QTVERSION})
+add_subdirectory(ext_kf6)
