@@ -42,7 +42,7 @@ cd $BUILDING_DIR
 
 rm -rf $BUILDING_DIR/* || true
 
-cmake $ORIG_WD/../3rdparty \
+cmake $ORIG_WD/3rdparty \
                            -DCMAKE_TOOLCHAIN_FILE=${VCKPG_DIR}/scripts/buildsystems/vcpkg.cmake \
                            -DCMAKE_BUILD_TYPE=RelWithDebInfo \
                            -DCMAKE_COLOR_MAKEFILE=ON \
