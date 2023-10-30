@@ -54,10 +54,60 @@ DK_KA_VERSION="23.08.1"
 
 # KDE KF5 frameworks version.
 # See official release here: https://download.kde.org/stable/frameworks/
-DK_KDE_VERSION="5.110"
+DK_KDE_VERSION="master"
 
 # Qt version to use in bundle and provided by MXE.
 DK_QTVERSION="6"
+
+FRAMEWORK_COMPONENTS="\
+ext_extra-cmake-modules \
+ext_kconfig \
+ext_breeze-icons \
+ext_kcoreaddons \
+ext_kwindowsystem \
+ext_solid \
+ext_threadweaver \
+ext_karchive \
+ext_kdbusaddons \
+ext_ki18n \
+ext_kcrash \
+ext_kcodecs \
+ext_kauth \
+ext_kguiaddons \
+ext_kwidgetsaddons \
+ext_kitemviews \
+ext_kcompletion \
+ext_kcolorscheme \
+ext_kconfigwidgets \
+ext_kiconthemes \
+ext_kservice \
+ext_kglobalaccel \
+ext_kxmlgui \
+ext_kbookmarks \
+ext_kimageformats \
+ext_plasma-wayland-protocols \
+ext_knotifications \
+ext_kjobwidgets \
+ext_kio \
+ext_knotifyconfig \
+ext_sonnet \
+ext_ktextwidgets \
+ext_kwallet \
+ext_libksane \
+ext_kcalendarcore \
+ext_marble \
+"
+
+#ext_kfilemetadata \
+#ext_kdoctools \
+#ext_phonon \
+#ext_qca \
+#ext_kpackage \
+#ext_attica \
+#ext_knewstuff \
+#ext_kitemmodels \
+#ext_kparts \
+#ext_krunner \
 
 # digiKam tag version from git. Official tarball do not include extra shared libraries.
 # The list of tags can be listed with this url: https://invent.kde.org/graphics/digikam/-/tags
