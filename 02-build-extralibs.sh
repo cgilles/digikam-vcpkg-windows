@@ -54,9 +54,8 @@ cmake $ORIG_WD/3rdparty \
 
 # NOTE: The order to compile each component here is very important.
 
-# core KF5 frameworks dependencies
+# core KDE frameworks dependencies
 cmake --build . --parallel --config RelWithDebInfo --target ext_extra-cmake-modules
-cmake --build . --parallel --config RelWithDebInfo --target ext_plasma-wayland-protocols
 cmake --build . --parallel --config RelWithDebInfo --target ext_kconfig
 cmake --build . --parallel --config RelWithDebInfo --target ext_breeze-icons
 cmake --build . --parallel --config RelWithDebInfo --target ext_kcoreaddons

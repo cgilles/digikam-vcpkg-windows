@@ -85,7 +85,6 @@ ext_kglobalaccel \
 ext_kxmlgui \
 ext_kbookmarks \
 ext_kimageformats \
-ext_plasma-wayland-protocols \
 ext_knotifications \
 ext_kjobwidgets \
 ext_kio \
