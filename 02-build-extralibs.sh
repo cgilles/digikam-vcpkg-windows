@@ -42,6 +42,7 @@ rm -rf $BUILDING_DIR/dk_cmake/* || true
 
 cmake $ORIG_WD/3rdparty \
                            -DCMAKE_TOOLCHAIN_FILE=$VCPKG_DIR/scripts/buildsystems/vcpkg.cmake \
+                           -DVCPKG_TARGET_TRIPLET=$VCPKG_TRIPLET \
                            -DCMAKE_BUILD_TYPE=RelWithDebInfo \
                            -DCMAKE_COLOR_MAKEFILE=ON \
                            -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR \

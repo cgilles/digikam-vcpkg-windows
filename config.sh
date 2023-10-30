@@ -21,9 +21,11 @@ DOWNLOAD_DIR="E:/d"
 # Absolute path where are compiled all tarballs
 BUILDING_DIR="E:/b"
 
+VCPKG_TRIPLET="x64-windows"
+
 VCPKG_COMMON_OPTIONS=(
 "--disable-metrics"
-"--triplet x64-windows"
+"--triplet ${VCPKG_TRIPLET}"
 "--x-buildtrees-root=${BUILDING_DIR}"
 "--x-install-root=${INSTALL_DIR}"
 "--downloads-root=${DOWNLOAD_DIR}"
