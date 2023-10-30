@@ -124,6 +124,7 @@ $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install openexr
 echo -e "\n"
 
 if [ ] ; then
+
 cd $ORIG_WD
 cp -f ../../scripts/create_manifest.sh $VCPKG_DIR
 cd $VCPKG_DIR
@@ -136,15 +137,15 @@ echo -e "\n"
 echo "---------- Building digiKam 3rd-party dependencies with VCPKG"
 
 # Create the build dir for the 3rdparty deps
-if [ ! -d $BUILDING_DIR ] ; then
-    mkdir -p $BUILDING_DIR
+if [ ! -d $BUILDING_DIR/dk_cmake ] ; then
+    mkdir -p $BUILDING_DIR/dk_cmake
 fi
 if [ ! -d $DOWNLOAD_DIR ] ; then
     mkdir -p $DOWNLOAD_DIR
 fi
 
-cd $BUILDING_DIR
-rm -rf $BUILDING_DIR/* || true
+cd $BUILDING_DIR/dk_cmake
+rm -rf $BUILDING_DIR/dk_cmake/* || true
 
 cmake $ORIG_WD/3rdparty \
                            -DCMAKE_TOOLCHAIN_FILE=$VCKPG_DIR/scripts/buildsystems/vcpkg.cmake \
@@ -170,6 +171,7 @@ cmake --build . --parallel --config RelWithDebInfo --target ext_imagemagick
 
 #################################################################################################
 fi
+
 export PATH=$ORIG_PATH
 
 TerminateScript
