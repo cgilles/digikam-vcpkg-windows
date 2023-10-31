@@ -11,18 +11,16 @@ index 1765cec..6abf96d 100644
               HINTS ${PKG_HUNSPELL_LIBRARY_DIRS}
  )
  
-diff --git a/data/CMakeLists.txt b/data/CMakeLists.txt
-index 0220513..90265d1 100644
---- a/data/CMakeLists.txt
-+++ b/data/CMakeLists.txt
-@@ -14,6 +14,10 @@ if(NOT CMAKE_CROSSCOMPILING)
-     INSTALL(TARGETS parsetrigrams ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
- 
-     add_executable(KF6::parsetrigrams ALIAS parsetrigrams)
-+
-+    add_custom_command(TARGET parsetrigrams POST_BUILD
-+      COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_RUNTIME_DLLS:KF6::parsetrigrams> $<TARGET_FILE_DIR:KF6::parsetrigrams>
-+      COMMAND_EXPAND_LISTS)
- else()
-     if (NOT PARSETRIGRAMS_EXECUTABLE AND KF6_HOST_TOOLING)
-         find_program(PARSETRIGRAMS_EXECUTABLE parsetrigrams6 PATHS ${KF6_HOST_TOOLING}/${KDE_INSTALL_BINDIR} NO_DEFAULT_PATH)
+diff --git a/src/core/CMakeLists.txt b/src/core/CMakeLists.txt
+index 575f7ef..daa8893 100644
+--- a/src/core/CMakeLists.txt
++++ b/src/core/CMakeLists.txt
+@@ -38,7 +38,7 @@ target_sources(KF6SonnetCore PRIVATE
+ # create trigrams file + add trigrams resource
+ if (TARGET KF6::parsetrigrams)
+     add_custom_command(OUTPUT "${PROJECT_BINARY_DIR}/data/trigrams.map"
+-                       COMMAND KF6::parsetrigrams "${PROJECT_SOURCE_DIR}/data/trigrams" > "${PROJECT_BINARY_DIR}/data/trigrams.map")
++                       COMMAND ${CMAKE_COMMAND} -E env "PATH=${CMAKE_INSTALL_PREFIX}/bin" KF6::parsetrigrams "${PROJECT_SOURCE_DIR}/data/trigrams" > "${PROJECT_BINARY_DIR}/data/trigrams.map")
+     configure_file(${PROJECT_SOURCE_DIR}/data/trigrams.qrc.in "${PROJECT_BINARY_DIR}/data/trigrams.qrc" @ONLY)
+     target_sources(KF6SonnetCore PRIVATE "${PROJECT_BINARY_DIR}/data/trigrams.qrc")
+ endif()
