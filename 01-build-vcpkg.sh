@@ -139,9 +139,11 @@ echo -e "\n"
 echo "---------- Building digiKam 3rd-party dependencies with VCPKG"
 
 # Create the build dir for the 3rdparty deps
+
 if [ ! -d $BUILDING_DIR/dk_cmake ] ; then
     mkdir -p $BUILDING_DIR/dk_cmake
 fi
+
 if [ ! -d $DOWNLOAD_DIR ] ; then
     mkdir -p $DOWNLOAD_DIR
 fi

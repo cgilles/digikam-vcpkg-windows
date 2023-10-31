@@ -39,6 +39,10 @@ echo "PATH=$PATH"
 
 #################################################################################################
 
+if [ ! -d $BUILDING_DIR/dk_cmake ] ; then
+    mkdir -p $BUILDING_DIR/dk_cmake
+fi
+
 cd $BUILDING_DIR/dk_cmake
 
 rm -rf $BUILDING_DIR/dk_cmake/* || true
