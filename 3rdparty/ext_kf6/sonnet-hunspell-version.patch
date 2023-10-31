@@ -11,3 +11,18 @@ index 1765cec..6abf96d 100644
               HINTS ${PKG_HUNSPELL_LIBRARY_DIRS}
  )
  
+diff --git a/data/CMakeLists.txt b/data/CMakeLists.txt
+index 0220513..ba8163b 100644
+--- a/data/CMakeLists.txt
++++ b/data/CMakeLists.txt
+@@ -14,6 +14,10 @@ if(NOT CMAKE_CROSSCOMPILING)
+     INSTALL(TARGETS parsetrigrams ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
+ 
+     add_executable(KF6::parsetrigrams ALIAS parsetrigrams)
++
++    add_custom_command(TARGET KF6::parsetrigrams POST_BUILD
++      COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_RUNTIME_DLLS:KF6::parsetrigrams> $<TARGET_FILE_DIR:KF6::parsetrigrams>
++      COMMAND_EXPAND_LISTS)
+ else()
+     if (NOT PARSETRIGRAMS_EXECUTABLE AND KF6_HOST_TOOLING)
+         find_program(PARSETRIGRAMS_EXECUTABLE parsetrigrams6 PATHS ${KF6_HOST_TOOLING}/${KDE_INSTALL_BINDIR} NO_DEFAULT_PATH)
