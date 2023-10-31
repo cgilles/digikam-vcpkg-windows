@@ -18,7 +18,7 @@ if(${ENABLE_QTVERSION} MATCHES "5")
         GIT_TAG 1.2.7
 
         CONFIGURE_COMMAND cd <SOURCE_DIR> &&
-                          $(CMAKE_COMMAND) .
+                          $(CMAKE_COMMAND)
                              -DCMAKE_INSTALL_PREFIX=${EXTPREFIX_fcitx-qt}
                              -DCMAKE_BUILD_TYPE=${GLOBAL_BUILD_TYPE}
                              -DENABLE_LIBRARY=OFF
@@ -42,7 +42,7 @@ else()
         GIT_TAG 1.2.7
 
         CONFIGURE_COMMAND cd <SOURCE_DIR> &&
-                          $(CMAKE_COMMAND) .
+                          $(CMAKE_COMMAND)
                              -DCMAKE_BUILD_TYPE=${GLOBAL_BUILD_TYPE}
                              -DENABLE_LIBRARY=OFF
                              -DENABLE_QT5=OFF
