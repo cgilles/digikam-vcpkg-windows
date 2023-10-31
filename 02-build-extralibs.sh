@@ -127,7 +127,7 @@ cmake --build . --parallel --config RelWithDebInfo --target ext_kcalendarcore
 #cmake --build . --parallel --config RelWithDebInfo --target ext_fcitx-qt           Linux only
 
 # Breeze style support
-cmake --build . --parallel --config RelWithDebInfo --target ext_breeze
+#cmake --build . --parallel --config RelWithDebInfo --target ext_breeze             Linux only
 
 #################################################################################################
 
