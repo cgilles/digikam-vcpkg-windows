@@ -71,7 +71,7 @@ cmake --build . --parallel --config RelWithDebInfo --target ext_kdbusaddons
 cmake --build . --parallel --config RelWithDebInfo --target ext_ki18n
 cmake --build . --parallel --config RelWithDebInfo --target ext_kcrash
 cmake --build . --parallel --config RelWithDebInfo --target ext_kcodecs
-cmake --build . --parallel --config RelWithDebInfo --target ext_kauth
+#cmake --build . --parallel --config RelWithDebInfo --target ext_kauth              Linux only
 cmake --build . --parallel --config RelWithDebInfo --target ext_kguiaddons
 cmake --build . --parallel --config RelWithDebInfo --target ext_kwidgetsaddons
 cmake --build . --parallel --config RelWithDebInfo --target ext_kitemviews
@@ -86,7 +86,7 @@ fi
 cmake --build . --parallel --config RelWithDebInfo --target ext_kconfigwidgets
 cmake --build . --parallel --config RelWithDebInfo --target ext_kiconthemes
 cmake --build . --parallel --config RelWithDebInfo --target ext_kservice
-cmake --build . --parallel --config RelWithDebInfo --target ext_kglobalaccel
+#cmake --build . --parallel --config RelWithDebInfo --target ext_kglobalaccel       Linux only
 cmake --build . --parallel --config RelWithDebInfo --target ext_kxmlgui
 cmake --build . --parallel --config RelWithDebInfo --target ext_kbookmarks
 cmake --build . --parallel --config RelWithDebInfo --target ext_kimageformats
@@ -96,22 +96,22 @@ cmake --build . --parallel --config RelWithDebInfo --target ext_kimageformats
 # Desktop integration support
 cmake --build . --parallel --config RelWithDebInfo --target ext_knotifications
 cmake --build . --parallel --config RelWithDebInfo --target ext_kjobwidgets
-cmake --build . --parallel --config RelWithDebInfo --target ext_kio
-cmake --build . --parallel --config RelWithDebInfo --target ext_knotifyconfig
+#cmake --build . --parallel --config RelWithDebInfo --target ext_kio                TODO
+#cmake --build . --parallel --config RelWithDebInfo --target ext_knotifyconfig      deps: KIO
 
 # libksane support
-cmake --build . --parallel --config RelWithDebInfo --target ext_sonnet
-cmake --build . --parallel --config RelWithDebInfo --target ext_ktextwidgets
+#cmake --build . --parallel --config RelWithDebInfo --target ext_sonnet             TODO
+#cmake --build . --parallel --config RelWithDebInfo --target ext_ktextwidgets       deps: Sonnet
 
-if [[ $DK_QTVERSION == 6 ]] ; then
+#if [[ $DK_QTVERSION == 6 ]] ; then
 
-    cmake --build . --parallel --config RelWithDebInfo --target ext_qca
-    cmake --build . --parallel --config RelWithDebInfo --target ext_kwallet
-    cmake --build . --parallel --config RelWithDebInfo --target ext_ksanecore
+#    cmake --build . --parallel --config RelWithDebInfo --target ext_qca            Linux only
+#    cmake --build . --parallel --config RelWithDebInfo --target ext_kwallet        Linux only
+#    cmake --build . --parallel --config RelWithDebInfo --target ext_ksanecore      Linux only
 
-fi
+#fi
 
-cmake --build . --parallel --config RelWithDebInfo --target ext_libksane
+#cmake --build . --parallel --config RelWithDebInfo --target ext_libksane           Linux only
 
 # Geolocation support
 cmake --build . --parallel --config RelWithDebInfo --target ext_marble
