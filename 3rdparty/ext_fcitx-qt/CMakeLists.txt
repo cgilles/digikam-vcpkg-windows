@@ -19,6 +19,7 @@ if(${ENABLE_QTVERSION} MATCHES "5")
 
         CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${EXTPREFIX_fcitx-qt}
                    -DCMAKE_BUILD_TYPE=${GLOBAL_BUILD_TYPE}
+                   -DCMAKE_SYSTEM_PREFIX_PATH=${EXTPREFIX}
                    -DENABLE_LIBRARY=OFF
                    -DENABLE_QT5=ON
                    -DENABLE_QT6=OFF
@@ -39,7 +40,9 @@ else()
         GIT_REPOSITORY https://github.com/fcitx/fcitx-qt5.git
         GIT_TAG 1.2.7
 
-        CMAKE_ARGS -DCMAKE_BUILD_TYPE=${GLOBAL_BUILD_TYPE}
+        CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${EXTPREFIX_fcitx-qt}
+                   -DCMAKE_BUILD_TYPE=${GLOBAL_BUILD_TYPE}
+                   -DCMAKE_SYSTEM_PREFIX_PATH=${EXTPREFIX}
                    -DENABLE_LIBRARY=OFF
                    -DENABLE_QT5=OFF
                    -DENABLE_QT6=ON
