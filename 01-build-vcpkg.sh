@@ -123,6 +123,7 @@ $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install openexr
 $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install gperf
 $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install libsnoretoast
 $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install hunspell
+$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install lensfun
 
 echo -e "\n"
 
