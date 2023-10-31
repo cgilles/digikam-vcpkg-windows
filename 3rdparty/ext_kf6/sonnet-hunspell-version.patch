@@ -12,7 +12,7 @@ index 1765cec..6abf96d 100644
  )
  
 diff --git a/data/CMakeLists.txt b/data/CMakeLists.txt
-index 0220513..ba8163b 100644
+index 0220513..90265d1 100644
 --- a/data/CMakeLists.txt
 +++ b/data/CMakeLists.txt
 @@ -14,6 +14,10 @@ if(NOT CMAKE_CROSSCOMPILING)
@@ -20,7 +20,7 @@ index 0220513..ba8163b 100644
  
      add_executable(KF6::parsetrigrams ALIAS parsetrigrams)
 +
-+    add_custom_command(TARGET KF6::parsetrigrams POST_BUILD
++    add_custom_command(TARGET parsetrigrams POST_BUILD
 +      COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_RUNTIME_DLLS:KF6::parsetrigrams> $<TARGET_FILE_DIR:KF6::parsetrigrams>
 +      COMMAND_EXPAND_LISTS)
  else()
