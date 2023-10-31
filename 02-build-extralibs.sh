@@ -124,7 +124,7 @@ cmake --build . --parallel --config RelWithDebInfo --target ext_marble
 cmake --build . --parallel --config RelWithDebInfo --target ext_kcalendarcore
 
 # Platform Input Context Qt plugin
-cmake --build . --parallel --config RelWithDebInfo --target ext_fcitx-qt
+#cmake --build . --parallel --config RelWithDebInfo --target ext_fcitx-qt           Linux only
 
 # Breeze style support
 cmake --build . --parallel --config RelWithDebInfo --target ext_breeze
