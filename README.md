@@ -57,7 +57,7 @@ Authors : Gilles Caulier <caulier dot gilles at gmail dot com>
         VCPKG_DIR=C:/vcpkg/
         INSTALL_DIR=E:/dk/
         DOWNLOAD_DIR=E:/d/
-        BUILD_DIR=E:/b/
+        BUILDING_DIR=E:/b/
 
         See the config.sh for details. Directories will be created automatically.
 
