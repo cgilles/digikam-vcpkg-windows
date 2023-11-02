@@ -100,7 +100,7 @@ cmake --build . --parallel --config RelWithDebInfo --target ext_kimageformats
 # Desktop integration support
 cmake --build . --parallel --config RelWithDebInfo --target ext_knotifications
 cmake --build . --parallel --config RelWithDebInfo --target ext_kjobwidgets
-#cmake --build . --parallel --config RelWithDebInfo --target ext_kio                TODO
+cmake --build . --parallel --config RelWithDebInfo --target ext_kio
 #cmake --build . --parallel --config RelWithDebInfo --target ext_knotifyconfig      deps: KIO
 
 # libksane support
