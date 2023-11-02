@@ -125,7 +125,6 @@ $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install libsnoretoast
 $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install hunspell
 $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install lensfun
 $VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install graphicsmagick
-$VCPKG_DIR/vcpkg ${VCPKG_COMMON_OPTIONS[@]} install libcanberra --allow-unsupported
 
 echo -e "\n"
 
