@@ -101,7 +101,7 @@ cmake --build . --parallel --config RelWithDebInfo --target ext_kimageformats
 cmake --build . --parallel --config RelWithDebInfo --target ext_knotifications
 cmake --build . --parallel --config RelWithDebInfo --target ext_kjobwidgets
 cmake --build . --parallel --config RelWithDebInfo --target ext_kio
-#cmake --build . --parallel --config RelWithDebInfo --target ext_knotifyconfig      deps: KIO
+cmake --build . --parallel --config RelWithDebInfo --target ext_knotifyconfig
 
 # libksane support
 cmake --build . --parallel --config RelWithDebInfo --target ext_sonnet
