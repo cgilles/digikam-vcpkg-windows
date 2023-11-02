@@ -34,7 +34,7 @@ RegisterRemoteServers
 
 ORIG_WD="`pwd`"
 
-export PATH=$PATH:/c/bison:$INSTALL_DIR/$VCPKG_TRIPLET/tools/gperf
+export PATH=$PATH:/c/bison:$INSTALL_DIR/$VCPKG_TRIPLET/tools/gperf:$INSTALL_DIR/$VCPKG_TRIPLET/bin
 echo "PATH=$PATH"
 
 #################################################################################################
@@ -104,8 +104,8 @@ cmake --build . --parallel --config RelWithDebInfo --target ext_kjobwidgets
 #cmake --build . --parallel --config RelWithDebInfo --target ext_knotifyconfig      deps: KIO
 
 # libksane support
-#cmake --build . --parallel --config RelWithDebInfo --target ext_sonnet             TODO
-#cmake --build . --parallel --config RelWithDebInfo --target ext_ktextwidgets       deps: Sonnet
+cmake --build . --parallel --config RelWithDebInfo --target ext_sonnet
+cmake --build . --parallel --config RelWithDebInfo --target ext_ktextwidgets
 
 #if [[ $DK_QTVERSION == 6 ]] ; then
 
